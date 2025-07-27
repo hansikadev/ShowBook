@@ -112,6 +112,22 @@ const Footer = () => {
 
                 </div>
             </div>
+            {/* Search Feature */}
+            <div className="mt-8 flex flex-col items-center">
+                <form className="flex w-full max-w-xs" onSubmit={e => e.preventDefault()}>
+                    <input
+                        type="text"
+                        placeholder="Search books..."
+                        className="rounded-l-md px-4 py-2 w-full bg-gray-800 text-gray-200 focus:outline-none"
+                    />
+                    <button
+                        type="submit"
+                        className="rounded-r-md bg-cyan-500 hover:bg-cyan-600 px-4 py-2 text-white font-semibold transition-colors"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
   )
